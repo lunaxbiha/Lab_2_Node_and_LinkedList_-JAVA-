@@ -2,10 +2,6 @@
 
 
     public class AssignmentTask1 {
-
-    //Two heads are being passed onto this method
-    //and a String is expected as return
-    // After you're done coding  MUST SUBMIT this method
     public static String checkSimilar( Node building1, Node building2 ){
       
       
@@ -18,9 +14,7 @@
           return "Not Similar";
           
         }
-        
-        
-        
+     
         temp1=temp1.next;
         temp2=temp2.next;
       }
