@@ -1,37 +1,33 @@
-// AssignmentTask4: ID Generator
-public class AssignmentTask4{
-    
-    // MUST SUBMIT this method
+
    public class AssignmentTask4{
-    
-    // MUST SUBMIT this method
+
     public static Node idGenerator(Node head1, Node head2, Node head3) {
         
         Node temp1 = head1;
         Node temp2 = head2;
         Node temp3 = head3;
         
-        Node dummyhead = new Node (null);
+        Node dummyhead = new Node (null); // using dummy head for reversing is pretty useful sort of memorised this for every reversal problem
     while (temp1 != null) {
         Node newNode = new Node(temp1.elem);
         newNode.next=dummyhead.next;
           dummyhead.next=newNode;
-          temp1=temp1.next;// Inside the loop now!
+          temp1=temp1.next;
     }
     
-    // Part 2: Find the TAIL of the reversed list so we can attach the rest
+    
     Node tail = dummyhead.next;
     while (tail.next != null) {
         tail = tail.next;
     }
     
-    // Part 3: Sum List 2 and List 3
+    
     while (temp2 != null && temp3 != null) {
         int sum = (int)temp2.elem + (int)temp3.elem;
-        // If the sum is 10 or more, take only the last digit (mod 10)
+        
         Node newNode1 = new Node(sum % 10);
         
-        // Attach this new node to the tail of our growing list
+       
         tail.next = newNode1;
         tail = tail.next;
         
