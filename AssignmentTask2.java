@@ -2,7 +2,7 @@
 import java.util.Arrays;
 public class AssignmentTask2{
     
-    // MUST SUBMIT this method
+
     public static Node organizeBooks(Node head, Integer[] popularity) {
         
         int n = popularity.length;
