@@ -3,6 +3,11 @@ public class LabTask1 {
 	
     // No need to submit this task
     public static Boolean assembleCongaLine(Node head){
+<<<<<<< HEAD
+=======
+        
+           public static Boolean assembleCongaLine(Node head){
+>>>>>>> c7bbdede1e75f7baa1047a1d63bb1d932c2c23b5
 
      Node temp = head;
             while(temp.next != null){
@@ -15,10 +20,15 @@ public class LabTask1 {
                     return true;
                 
             
+<<<<<<< HEAD
         }
 
         
        
+=======
+        
+    }
+>>>>>>> c7bbdede1e75f7baa1047a1d63bb1d932c2c23b5
 
     //NOTE: if you find any issue with the driver code please inform AIB
     //DO NOT TOUCH THE DRIVER CODE BELOW

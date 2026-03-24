@@ -2,7 +2,11 @@
 public class LabTask2 {
     
     // No need to submit this task
+<<<<<<< HEAD
     public static Node wordDecoder( Node head ){
+=======
+   public static Node wordDecoder( Node head ){
+>>>>>>> c7bbdede1e75f7baa1047a1d63bb1d932c2c23b5
       
       int size=0;
       Node temp = head;
